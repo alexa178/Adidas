@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            color: white;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .main-container {
+            width: 70%;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            height: 45px;
+            width: 11%;
+            transition: 0.3s;
+            background-color: white;
+            color: black;
+            font-size: 20px;
+            border: 2px solid black;
+            margin: 0px 20px 0px 20px;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            transition: 0.3s;
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+        
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: darkred;
+        }
+
+    </style>
+    <link rel="icon" type="image/png" href="./photos/adidas-favicon.png">
+    <title>Adidas</title>
+</head>
+<body>
+    <div class="main-container">
+        <p>
+            Преди да продължите към уебсайта, моля имайте на предвид,
+            че ние не представляваме "<a href="https://www.adidas.com/us">Адидас</a>". Ако имате въпроси
+            по темата може да ни попитате като следвате инструкциите след
+            като натиснете бутона "Помощ". Ако изберете "Към сайта" вие се
+            съгласявате с нашите политики. За повече информация натиснете
+            бутона "Политики".
+        </p>
+        <div class="button-container">
+            <button onclick="window.location.href='index.html'">Към сайта</button>
+            <button onclick="window.location.href='help.html'">Помощ</button>
+            <button onclick="window.location.href='policy.html'">Политики</button>
+        </div>
+    </div>
+</body>
+</html>
