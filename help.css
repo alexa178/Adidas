@@ -5,6 +5,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
 }
 
 header {
@@ -131,4 +132,12 @@ textarea:focus, input:focus {
     font-weight: 700;
     margin: 0px 5px 0px 5px;
     border-radius: 10px;
+}
+footer {
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+    position: relative;
+    bottom: 0; /* Position at the bottom of the flex container (body) */
+    width: 100%;
+    background-color: #000;
+    margin-top: auto;
 }
