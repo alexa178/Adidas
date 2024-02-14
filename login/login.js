@@ -1,15 +1,32 @@
+// Define the hardcoded user
+var hardcodedUser = { username: "amongus", password: "sugoma" };
+
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
 
-    // Here you can add logic to check username and password against a database or any other authentication method
-    // For this example, let's just check if both fields are filled
-    if (username && password) {
+    // Retrieve users from local storage
+    var existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+
+    // Find the user in the existing users array from local storage
+    var user = existingUsers.find(function(user) {
+        return user.username === username && user.password === password;
+    });
+
+    // Check if the user exists in local storage
+    if (user) {
         alert('Login successful!');
-        // Redirect to another page or perform other actions after successful login
-        window.location.href="/index/index.html";
+        // Redirect to another page after successful login
+        window.location.href = "../index/index.html";
     } else {
-        alert('Please enter both username and password.');
+        // Check if the entered credentials match the hardcoded user's credentials
+        if (username === hardcodedUser.username && password === hardcodedUser.password) {
+            alert('Login successful!');
+            // Redirect to another page after successful login
+            window.location.href = "../index/index.html";
+        } else {
+            alert('Invalid username or password.');
+        }
     }
 });
