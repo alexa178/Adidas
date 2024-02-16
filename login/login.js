@@ -1,5 +1,8 @@
-// Define the hardcoded user
-var hardcodedUser = { username: "amongus", password: "sugoma" };
+// Define the hardcoded users
+var hardcodedUsers = [
+    { username: "amongus", password: "sugoma" },
+    { username: "mert", password: "1234" }
+];
 
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -20,8 +23,12 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         // Redirect to another page after successful login
         window.location.href = "../index/index.html";
     } else {
-        // Check if the entered credentials match the hardcoded user's credentials
-        if (username === hardcodedUser.username && password === hardcodedUser.password) {
+        // Check if the entered credentials match any hardcoded user's credentials
+        var isHardcodedUser = hardcodedUsers.some(function(user) {
+            return user.username === username && user.password === password;
+        });
+        
+        if (isHardcodedUser) {
             alert('Login successful!');
             // Redirect to another page after successful login
             window.location.href = "../index/index.html";
