@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -160,4 +163,15 @@ header {
     justify-content: center;
     align-items: center;
     height: 100%; /* Ensures the list takes full height of its container */
+}
+
+footer {
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+    bottom: 0; /* Position at the bottom of the flex container (body) */
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: auto;
 }
