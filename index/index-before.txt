@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../photos/adidas-favicon.png">
-    <link rel="stylesheet" href="../index/index.css">
-    <link rel="stylesheet" href="../index/card.css">
-    <link rel="stylesheet" href="../index/buttons.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="card.css">
     <title>Adidas</title>
 </head>
 <body>
@@ -30,18 +29,71 @@
 </header>
 
 <div class="menu-container">
-    <button class="menu-buttons" onclick="window.location.href='../index/index.html'" >Начало</button>
-    <button class="menu-buttons" onclick="window.location.href='shoes.html'">Обувки</button>
-    <button class="on-page">Дрехи</button>
+    <button class="on-page">Начало</button>
+    <button class="menu-buttons" onclick="window.location.href='../other-pages/shoes.html'">Обувки</button>
+    <button class="menu-buttons" onclick="window.location.href='../other-pages/clothes.html'">Дрехи</button>
     <button class="menu-buttons">Аксесоари</button>
     <button class="menu-buttons">Спорт</button>
-    <button class="menu-buttons" onclick="window.location.href='on-sale.html'">Намаления</button>
-    <button class="menu-buttons" onclick="window.location.href='../help-page/help.html'" >Помощ</button>
+    <button class="menu-buttons" onclick="window.location.href='../other-pages/on-sale.html'">Намаления</button>
+    <button class="menu-buttons" onclick="window.location.href='../help-page/help.html'">Помощ</button>
 </div>
 
 <hr class="under-menu">
 
 <div class="card-container">
+
+    <!--Shoes start here-->
+    <!--Shoe-1-->
+    <div class="card">
+        <img src="../products/shoes/shoe1/shoe1-pic1.png" alt="Product Image">
+        <div class="card-content">
+            <div class="price">240 лв</div>
+            <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
+        </div>
+    </div>
+
+
+    <!--Shoe-2-->
+    <div class="card">
+        <img src="../products/shoes/shoe2/shoe2-pic1.png" alt="Product Image">
+        <div class="card-content">
+            <div class="price">220 лв</div>
+            <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
+        </div>
+    </div>
+
+
+    <!--Shoe-3-->
+    <div class="card">
+        <img src="../products/shoes/shoe3/shoe3-pic1.png" alt="Product Image">
+        <div class="card-content">
+            <div class="price"><del>160 лв</del> <span style="color: red">120 лв</span></div>
+            <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
+        </div>
+    </div>
+
+
+    <!--Shoe-4-->
+    <div class="card">
+        <img src="../products/shoes/shoe4/shoe4-pic1.png" alt="Product Image">
+        <div class="card-content">
+            <div class="price">240 лв</div>
+            <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
+        </div>
+    </div>
+
+
+    <!--Shoe-5-->
+    <div class="card">
+        <img src="../products/shoes/shoe5/shoe5-pic1.png" alt="Product Image">
+        <div class="card-content">
+            <div class="price">140 лв</div>
+            <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
+        </div>
+    </div>
+    <!--Shoes end here-->
+
+
 
     <!--Clothes start here-->
     <!--Cloth-1-->
@@ -92,7 +144,7 @@
             <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
         </div>
     </div>
-    <!--Clothes end here here-->
+    <!--Clothes end here-->
 
 </div>
 
@@ -101,6 +153,6 @@
     <p>Adidas Apparel company</p>
 </footer>
 
-<script src="../index/profile.js"></script>
+<script src="profile.js"></script>
 </body>
 </html>
