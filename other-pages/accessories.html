@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../photos/adidas-favicon.png">
+    <link rel="stylesheet" href="../index/index.css">
+    <link rel="stylesheet" href="../index/card.css">
+    <link rel="stylesheet" href="../index/buttons.css">
+    <title>Adidas</title>
+</head>
+<body>
+
+<header>
+    <div class="search-bar">
+        <input class="search-box" type="search" placeholder="Какво ще търсите днес?">
+        <button class="search-button"><img src="../photos/magnifying-glass.png"></button>
+    </div>
+
+    <div class="profile-icon" id="profile-icon">
+        <img src="../photos/profile-picture.png" alt="Profile Image">
+    </div>
+    
+    <div id="options" class="options hidden" onclick="window.location.href='../login/login.html'">
+        <ul>
+            <li>Изход</li>
+        </ul>
+    </div>
+    
+</header>
+
+<div class="menu-container">
+    <button class="menu-buttons" onclick="window.location.href='../index/index.html'" >Начало</button>
+    <button class="menu-buttons" onclick="window.location.href='shoes.html'">Обувки</button>
+    <button class="menu-buttons" onclick="window.location.href='clothes.html'">Дрехи</button>
+    <button class="on-page">Аксесоари</button>
+    <button class="menu-buttons">Спорт</button>
+    <button class="menu-buttons" onclick="window.location.href='on-sale.html'">Намаления</button>
+    <button class="menu-buttons" onclick="window.location.href='../help-page/help.html'" >Помощ</button>
+</div>
+
+<hr class="under-menu">
+
+<div class="card-container">
+
+    <!--Accessories start here-->
+    <!--Accessorie-1-->
+    <div class="card">
+        <img src="../products/accessories/acc1/acc1-pic1.png" alt="Product Image">
+        <div class="card-content">
+            <div class="price">300 лв</div>
+            <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
+        </div>
+    </div>
+
+
+    <!--Accessorie-2-->
+    <div class="card">
+        <img src="../products/accessories/acc2/acc2-pic1.png" alt="Product Image">
+        <div class="card-content">
+            <div class="price">130 лв</div>
+            <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
+        </div>
+    </div>
+
+
+    <!--Accessorie-3-->
+    <div class="card">
+        <img src="../products/accessories/acc3/acc3-pic1.png" alt="Product Image">
+        <div class="card-content">
+            <div class="price">72 лв</div>
+            <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
+        </div>
+    </div>
+
+
+    <!--Accessorie-4-->
+    <div class="card">
+        <img src="../products/accessories/acc4/acc4-pic1.png" alt="Product Image">
+        <div class="card-content">
+            <div class="price"><del>84 лв</del> <span style="color: red">76 лв</span></div>
+            <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
+        </div>
+    </div>
+
+
+    <!--Accessorie-5-->
+    <div class="card">
+        <img src="../products/accessories/acc5/acc5-pic1.png" alt="Product Image">
+        <div class="card-content">
+            <div class="price">120 лв</div>
+            <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
+        </div>
+    </div>
+    <!--Accessories end here here-->
+
+</div>
+
+<footer>
+    <!-- This will stay at the bottom of the page but won't stick to the screen -->
+    <p>Adidas Apparel company</p>
+</footer>
+
+<script src="../index/profile.js"></script>
+</body>
+</html>
