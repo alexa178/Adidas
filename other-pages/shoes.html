@@ -13,8 +13,8 @@
 
 <header>
     <div class="search-bar">
-        <input class="search-box" type="search" placeholder="Какво ще търсите днес?">
-        <button class="search-button"><img src="../photos/magnifying-glass.png"></button>
+        <input class="search-box" type="search" placeholder="Какво ще търсите днес?" id="searchInput">
+        <button class="search-button" onclick="searchItems()"><img src="../photos/magnifying-glass.png"></button>
     </div>
 
     <div class="profile-icon" id="profile-icon">
@@ -34,7 +34,6 @@
     <button class="on-page">Обувки</button>
     <button class="menu-buttons" onclick="window.location.href='clothes.html'">Дрехи</button>
     <button class="menu-buttons" onclick="window.location.href='accessories.html'">Аксесоари</button>
-    <button class="menu-buttons">Спорт</button>
     <button class="menu-buttons" onclick="window.location.href='on-sale.html'">Намаления</button>
     <button class="menu-buttons" onclick="window.location.href='../help-page/help.html'" >Помощ</button>
 </div>
@@ -48,6 +47,7 @@
     <div class="card">
         <img src="../products/shoes/shoe1/shoe1-pic1.png" alt="Product Image">
         <div class="card-content">
+            <h2 class="card-name">BASKETBALL SHOES</h2>
             <div class="price">240 лв</div>
             <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
         </div>
@@ -58,6 +58,7 @@
     <div class="card">
         <img src="../products/shoes/shoe2/shoe2-pic1.png" alt="Product Image">
         <div class="card-content">
+            <h2 class="card-name">CAMPUS 00S SHOES</h2>
             <div class="price">220 лв</div>
             <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
         </div>
@@ -68,6 +69,7 @@
     <div class="card">
         <img src="../products/shoes/shoe3/shoe3-pic1.png" alt="Product Image">
         <div class="card-content">
+            <h2 class="card-name">ADIDAS HELLO KITTY</h2>
             <div class="price"><del>160 лв</del> <span style="color: red">120 лв</span></div>
             <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
         </div>
@@ -78,6 +80,7 @@
     <div class="card">
         <img src="../products/shoes/shoe4/shoe4-pic1.png" alt="Product Image">
         <div class="card-content">
+            <h2 class="card-name">GAZELLE SHOES</h2>
             <div class="price">240 лв</div>
             <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
         </div>
@@ -88,6 +91,7 @@
     <div class="card">
         <img src="../products/shoes/shoe5/shoe5-pic1.png" alt="Product Image">
         <div class="card-content">
+            <h2 class="card-name">AMPLIMOVE SHOES</h2>
             <div class="price">140 лв</div>
             <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
         </div>
@@ -103,6 +107,7 @@
     <p>Adidas Apparel company</p>
 </footer>
 
+<script src="searchbar.js"></script>
 <script src="../index/profile.js"></script>
 </body>
 </html>

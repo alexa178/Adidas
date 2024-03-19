@@ -13,10 +13,10 @@
 
 <header>
     <div class="search-bar">
-        <input class="search-box" type="search" placeholder="Какво ще търсите днес?">
-        <button class="search-button"><img src="../photos/magnifying-glass.png"></button>
+        <input class="search-box" type="search" placeholder="Какво ще търсите днес?" id="searchInput">
+        <button class="search-button" onclick="searchItems()"><img src="../photos/magnifying-glass.png"></button>
     </div>
-
+    
     <div class="profile-icon" id="profile-icon">
         <img src="../photos/profile-picture.png" alt="Profile Image">
     </div>
@@ -34,7 +34,6 @@
     <button class="menu-buttons" onclick="window.location.href='shoes.html'">Обувки</button>
     <button class="menu-buttons" onclick="window.location.href='clothes.html'">Дрехи</button>
     <button class="on-page">Аксесоари</button>
-    <button class="menu-buttons">Спорт</button>
     <button class="menu-buttons" onclick="window.location.href='on-sale.html'">Намаления</button>
     <button class="menu-buttons" onclick="window.location.href='../help-page/help.html'" >Помощ</button>
 </div>
@@ -48,7 +47,8 @@
     <div class="card">
         <img src="../products/accessories/acc1/acc1-pic1.png" alt="Product Image">
         <div class="card-content">
-            <div class="price">300 лв</div>
+            <h2 class="card-name">3-PACK CREW SOCKS</h2>
+            <div class="price">32 лв</div>
             <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
         </div>
     </div>
@@ -58,6 +58,7 @@
     <div class="card">
         <img src="../products/accessories/acc2/acc2-pic1.png" alt="Product Image">
         <div class="card-content">
+            <h2 class="card-name">FREAK 6.0</h2>
             <div class="price">130 лв</div>
             <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
         </div>
@@ -68,6 +69,7 @@
     <div class="card">
         <img src="../products/accessories/acc3/acc3-pic1.png" alt="Product Image">
         <div class="card-content">
+            <h2 class="card-name">UTILITY BOONIE HAT</h2>
             <div class="price">72 лв</div>
             <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
         </div>
@@ -78,6 +80,7 @@
     <div class="card">
         <img src="../products/accessories/acc4/acc4-pic1.png" alt="Product Image">
         <div class="card-content">
+            <h2 class="card-name">DUFFEL BAG</h2>
             <div class="price"><del>84 лв</del> <span style="color: red">76 лв</span></div>
             <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
         </div>
@@ -88,6 +91,7 @@
     <div class="card">
         <img src="../products/accessories/acc5/acc5-pic1.png" alt="Product Image">
         <div class="card-content">
+            <h2 class="card-name">EXCEL BACKPACK</h2>
             <div class="price">120 лв</div>
             <a href="product-page.html" class="button" target="_blank">Купи Сега</a>
         </div>
@@ -101,6 +105,7 @@
     <p>Adidas Apparel company</p>
 </footer>
 
+<script src="searchbar.js"></script>
 <script src="../index/profile.js"></script>
 </body>
 </html>
