@@ -55,3 +55,7 @@
       max-width: 300px;
     }
   }
+
+  a:visited, a:link {
+   color: black; 
+  }
