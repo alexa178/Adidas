@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <p style="font-size: 28px; margin-left: 30px;">
+        „aдидас“ АД (adidas AD) е германска компания. Тя е най-големият в света производител на спортни стоки.<br>
+        Седалището на фирмата продължава да е в Германия, докато производството отдавна е изнесено в други части на света, основно в Азия.<br> 
+        Фирмата „Пума“, собственост на Рудолф Даслер – брата на Адолф Даслер, е сред основните конкуренти на адидас.<br>
+        <br>
+        Фирмата е наименувана на името на нейния основател Адолф Даслер <br>
+        (неговият прякор Ади и първите 3 букви от неговото фамилно име). <br>
+        Основана е в град Херцогенаурах, Бавария. Марката адидас става световноизвестна с <br>
+        победата на германския отбор на световното футболно първенство в Берн през 1954 г. <br>
+        Неговите футболисти използват обувки на Даслер, на които бутоните могат да се подменят, <br>
+        което тогава е било революция. Даслер умира през 1978 г. и оставя след себе си световен концерн.<br>
+        <br>
+        Чрез покупката на Salomon Group през 1997 г. с марките Salomon <br> 
+        (ски и принадлежности за зимен спорт, TaylorMade (голфпринадлежности), Mavic и Bonfire водещият <br> 
+        производител на спортни стоки „адидас“ днес е интернационален концерн. Тече процес по финализиране на <br> 
+        сделката за продажбата на Salomon Group на финландската фирма Amer Sports Corporation, след което компанията <br>
+        отново ще приеме името „адидас“ АД.
+    </p>
+    <h1 style="margin-left: 30px;">Нашата компания се намира тук</h1>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            // Coordinates of your company's location
+            var companyLocation = { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE };
+
+            // Map options
+            var options = {
+                center: companyLocation,
+                zoom: 15 // Adjust the zoom level as needed
+            };
+
+            // Create the map
+            var map = new google.maps.Map(document.getElementById('map'), options);
+
+            // Add a marker for your company's location
+            var marker = new google.maps.Marker({
+                position: companyLocation,
+                map: map,
+                title: 'Our Company Location'
+            });
+        }
+    </script>
+
+    <!-- Load the Maps JavaScript API with your API key and initialize the map -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Location</title>
+</head>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1wDEjoPqK1dEhNseF7Ds9eETsdLM&hl=en" width="100%" height="900px"></iframe>
+</body>
+</html>
