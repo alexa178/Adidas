@@ -11,7 +11,9 @@
 <body>
 
 <header>
-
+    <div class="logo">
+        <img src="../../photos/Adidas_Logo.png" width="50px" style="margin-left: auto;">
+    </div>
     <div class="profile-icon" id="profile-icon">
         <img src="../../photos/profile-picture.png" alt="Profile Image">
     </div>
@@ -38,25 +40,24 @@
 <div class="product-container">
 
     <div class="product-images">
-        
-       <div class="product-image">
+        <div class="image-container">
             <img src="../../products/shoes/shoe2/shoe2-pic1.png" alt="Product Image 1">
-       </div>
-
-        <div class="product-image">
+        </div>
+        <div class="image-container">
             <img src="../../products/shoes/shoe2/shoe2-pic2.png" alt="Product Image 2">
         </div>
-
-        <div class="product-image">
+        <div class="image-container">
             <img src="../../products/shoes/shoe2/shoe2-pic3.png" alt="Product Image 3">
         </div>
-
-        <div class="product-image">
+        <div class="image-container">
             <img src="../../products/shoes/shoe2/shoe2-pic4.png" alt="Product Image 4">
         </div>
-
+        <!-- Add more image containers for additional images -->
     </div>
-
+    <div class="navigation-buttons">
+        <button onclick="prevImage()">Предишна</button>
+        <button onclick="nextImage()">Следваща</button>
+    </div>
     <div class="product-info">
         <h1>CAMPUS 00S SHOES</h1>
         <p>220 лв</p>

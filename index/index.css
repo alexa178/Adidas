@@ -6,6 +6,8 @@ body {
     flex-direction: column;
 }
 
+/* Your existing CSS styles go here */
+
 header {
     background-color: black;
     color: white;
@@ -13,6 +15,7 @@ header {
     display: flex;
     justify-content: space-between; /* Align items to the start and end of the header */
     align-items: center;
+    border-bottom: 1px solid white;
 }
 
 .search-bar {
@@ -129,28 +132,33 @@ footer {
 
 .text-container {
     font-size: 30px;
-    color: black;
+    color: white;
     text-align: center;
 }
 
 .menu-container-index {
-    margin: 15px 0;
+    margin: 25px 30px;
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (fourth parameter) for transparency */
+    border-radius: 20px;
 }
+
 
 .menu-buttons-index {
     transition: 0.3s;
-    min-width: 100px; /* Adjust width to fit content */
-    height: 80px;
+    min-width: 20px; /* Adjust width to fit content */
+    height: 70px;
+    width: 95%;
     border: 1px solid black;
     background-color: white;
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 700;
     margin: 10px; /* Adjust margins for spacing */
     border-radius: 10px;
-    flex-basis: calc(35% - 10px); /* Set the basis for 2 buttons per line with margins */
     box-sizing: border-box; /* Include border and padding in the element's total width and height */
 }
 
@@ -158,6 +166,7 @@ footer {
     transition: 0.3s;
     background-color: black;
     color: white;
+    border-color: white;
     cursor: pointer;
 }
 
