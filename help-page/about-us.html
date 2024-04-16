@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="../photos/favicon.ico">
+    <title>About us</title>
 </head>
 <body style="background-color: black; color: white;">
     <p style="font-size: 28px; margin-left: 30px;">
@@ -24,40 +25,9 @@
         сделката за продажбата на Salomon Group на финландската фирма Amer Sports Corporation, след което компанията <br>
         отново ще приеме името „адидас“ АД.
     </p>
+    <h1 style="margin-left: 30px;">Диаграма от нашите печалби през годините</h1>
+    <img src="../photos/268416.png" width="1600px">
     <h1 style="margin-left: 30px;">Нашата компания се намира тук</h1>
-    <div id="map"></div>
-
-    <script>
-        function initMap() {
-            // Coordinates of your company's location
-            var companyLocation = { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE };
-
-            // Map options
-            var options = {
-                center: companyLocation,
-                zoom: 15 // Adjust the zoom level as needed
-            };
-
-            // Create the map
-            var map = new google.maps.Map(document.getElementById('map'), options);
-
-            // Add a marker for your company's location
-            var marker = new google.maps.Marker({
-                position: companyLocation,
-                map: map,
-                title: 'Our Company Location'
-            });
-        }
-    </script>
-
-    <!-- Load the Maps JavaScript API with your API key and initialize the map -->
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Location</title>
-</head>
     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1wDEjoPqK1dEhNseF7Ds9eETsdLM&hl=en" width="100%" height="900px"></iframe>
 </body>
 </html>
