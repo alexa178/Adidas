@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="help.css">
+    <link rel="stylesheet" href="../index/buttons.css">
+    <link rel="icon" type="image/png" href="../photos/favicon.ico">
     <title>About the Creator</title>
     <style>
         body {
@@ -24,9 +27,26 @@
             margin-top: 20px;
             font-size: 28px;
         }
+        .on-page {
+            border: solid 3px white
+        }
+        button:hover {
+            border: 3px solid white;
+        }
     </style>
 </head>
 <body>
+    <div class="menu-container">
+        <button class="menu-buttons" onclick="window.location.href='../index/index.html'" >Начало</button>
+        <button class="menu-buttons" onclick="window.location.href='../other-pages/shoes.html'">Обувки</button>
+        <button class="menu-buttons" onclick="window.location.href='../other-pages/clothes.html'">Дрехи</button>
+        <button class="menu-buttons" onclick="window.location.href='../other-pages/accessories.html'">Аксесоари</button>
+        <button class="menu-buttons" onclick="window.location.href='../other-pages/on-sale.html'">Намаления</button>
+        <button class="menu-buttons" onclick="window.location.href='../help-page/help.html'" >Помощ</button>
+        <button class="on-page">Авторска Страница</button>
+        <button class="menu-buttons" onclick="window.location.href='../help-page/about-us.html'">За Нас</button>
+    </div>
+    
     <div id="creator">
         <img src="../photos/skull.jpg" alt="Creator Image">
         <p>Изготвил: Селин Севгин Ахмед от 12А клас</p>

@@ -137,7 +137,7 @@ footer {
 }
 
 .menu-container-index {
-    margin: 25px 30px;
+    margin: -25px 30px;
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: center;
@@ -151,7 +151,7 @@ footer {
 .menu-buttons-index {
     transition: 0.3s;
     min-width: 20px; /* Adjust width to fit content */
-    height: 70px;
+    height: 60px;
     width: 95%;
     border: 1px solid black;
     background-color: white;
@@ -181,4 +181,23 @@ a {
 }
 a:visited {
     color: darkblue;
+}
+
+.uvod {
+    /* Add your styles here */
+    padding: 1em;
+    background-color: #f8f9fa;
+    color: #212529;
+    text-align: center;
+    margin-top: 16%;
+    margin-right: 2%;
+    border-radius: 5px;
+
+    /* New styles for positioning and width */
+    position: absolute;
+    right: 0;
+    width: 30%; /* Adjust as needed */
+    height: 40%;
+    overflow-y: auto;
+    font-size: 35px;
 }
